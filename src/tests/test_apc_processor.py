@@ -183,7 +183,7 @@ def test_process_no_header(no_header_data):
         # Read and verify results
         result_df = pd.read_csv(result_file)
         assert len(result_df) == 3
-        assert all(col in result_df.columns for col in ['event_timestamp', 'ons', 'offs', 'latitude', 'longitude'])
+        assert all(col in result_df.columns for col in ['event_timestamp', 'ons', 'offs', 'longitude','latitude'])
     finally:
         if os.path.exists(output_file):
             os.remove(output_file)

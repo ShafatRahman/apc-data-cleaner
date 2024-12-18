@@ -74,7 +74,7 @@ class APCDataLoader(BaseDataLoader):
 
     def _enforce_required_columns(self, df: pd.DataFrame) -> pd.DataFrame:
         try:
-            required_columns = ['event_timestamp', 'vehicle_id', 'ons', 'offs', 'latitude', 'longitude']
+            required_columns = ['event_timestamp', 'vehicle_id', 'ons', 'offs', 'longitude', 'latitude']
             for col in required_columns:
                 if col not in df.columns:
                     df[col] = None
@@ -96,7 +96,7 @@ class APCDataLoader(BaseDataLoader):
     def _append_data(self, folder_path: str, file_patterns: str):
         try:
             dfs = []
-            expected_headers = ['date', 'time', 'ons', 'offs', 'latitude', 'longitude', "dwell time"]
+            expected_headers = ['date', 'time', 'ons', 'offs', 'longitude', 'latitude', "dwell time"]
             for pattern in file_patterns:
                 files = glob.glob(os.path.join(folder_path, pattern))
                 if not files:
