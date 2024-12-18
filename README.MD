@@ -19,11 +19,11 @@ Contains the source code for dataloaders, processors, error handlers, and tests.
 
 ### `data/`
 
-Contains the raw APC data files.
+Contains the csv data files.
 
 ### `processor_outputs/`
 
-Contains the processed APC data files.
+Directory to store processor outputs.
 
 ## Setup instructions
 
