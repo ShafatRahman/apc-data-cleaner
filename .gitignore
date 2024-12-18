@@ -163,3 +163,5 @@ cython_debug/
 .pytest_cache/
 apc_venv/
 .venv/
+
+.DS_Store
