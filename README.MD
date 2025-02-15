@@ -1,4 +1,4 @@
-# APC Data Processor
+# Automated Passenger Count (APC) Data Cleaner
 
 ## Project Structure
 
