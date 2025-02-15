@@ -68,4 +68,3 @@ python -m src.scripts.apc_processor data/vehicles/malformed-data 2024-04-01T00:0
 
 ### Notes:
 - For empty files, the script will show a warning and skip the file.
-- I decided to change the start and end date inputs to apc_processor.py to be datetime formatted to enable filtering by time.
